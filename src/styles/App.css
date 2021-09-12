@@ -5,6 +5,7 @@
   justify-content: center;
   width: 80%;
   margin: auto;
+  text-align: center;
 }
 
 .woeid {
@@ -16,12 +17,17 @@
 
 .woeid-select {
   display: block;
-  margin: 1rem;
+  font-size: 1rem;
   padding: 0.5rem;
   border-radius: 999px;
-  border-color: #aab8c2;
+  border-color: #1a8cd8;
   border-width: 2px;
   cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.trends {
+  margin-top: 3rem;
 }
 
 li {
@@ -37,6 +43,7 @@ li > a {
   color: #1a8cd8;
   text-decoration: none;
   font-size: 1rem;
+  display: flex;
 }
 
 li:hover {
@@ -46,6 +53,16 @@ li:hover {
 
 li:hover > a {
   color: #f5f8fa;
+}
+
+.top-number {
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.top-number::after {
+  content: '•';
+  margin: 0 0.375rem;
 }
 
 .tweet-volume {
@@ -61,4 +78,34 @@ li:hover > a {
 li:hover .tweet-volume {
   color: #1a8cd8;
   background-color: #f5f8fa;
+}
+
+@media (max-width: 992px) {
+  .main {
+    width: 100%;
+  }
+
+  .woeid {
+    margin: 0.5rem;
+  }
+
+  .woeid-select {
+    margin: 0;
+  }
+
+  .trends {
+    margin: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media (max-width: 380px) {
+  html {
+    font-size: 65%;
+  }
 }
