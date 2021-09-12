@@ -51,6 +51,7 @@ export const App = () => {
           return (
             <li key={index}>
               <a href={trend.url}>
+                <span className="top-number">{index + 1}</span>
                 {trend.name}
                 {trend.tweet_volume && (
                   <span className="tweet-volume">{trend.tweet_volume}</span>
