@@ -1,8 +1,8 @@
-import logo from './images/twitter.svg';
-
 import axios from 'axios';
 
 import { useEffect, useState } from 'react';
+
+import { Header } from './components/Header';
 
 export const App = () => {
   const [woeid, setWoeid] = useState(1);
@@ -61,10 +61,7 @@ export const App = () => {
 
   return (
     <div className="App">
-      <header className="header">
-        <img src={logo} alt="Twitter logo" />
-        <h1>Twitter Trends</h1>
-      </header>
+      <Header />
       <main>
         <div className="woeid">
           <select
