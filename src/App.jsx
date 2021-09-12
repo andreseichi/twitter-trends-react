@@ -1,3 +1,5 @@
+import './styles/App.css';
+
 import axios from 'axios';
 
 import { useEffect, useState } from 'react';
@@ -48,10 +50,12 @@ export const App = () => {
         {trends.map((trend, index) => {
           return (
             <li key={index}>
-              <a href={trend.url}>{trend.name}</a>
-              {trend.tweet_volume && (
-                <span className="tweet-volume">{trend.tweet_volume}</span>
-              )}
+              <a href={trend.url}>
+                {trend.name}
+                {trend.tweet_volume && (
+                  <span className="tweet-volume">{trend.tweet_volume}</span>
+                )}
+              </a>
             </li>
           );
         })}
@@ -62,13 +66,14 @@ export const App = () => {
   return (
     <div className="App">
       <Header />
-      <main>
+      <main className="main">
         <div className="woeid">
           <select
             name="trend-local"
             id="trend-local"
             defaultValue={1}
             onChange={(e) => setWoeid(e.target.value)}
+            className="woeid-select"
           >
             <option value="1">Global</option>
             <option value="455820">Belém</option>

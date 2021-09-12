@@ -1,0 +1,64 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+}
+
+.woeid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.woeid-select {
+  display: block;
+  margin: 1rem;
+  padding: 0.5rem;
+  border-radius: 999px;
+  border-color: #aab8c2;
+  border-width: 2px;
+  cursor: pointer;
+}
+
+li {
+  background-color: #f5f8fa;
+  display: inline-block;
+  margin: 0.875rem 0.5rem;
+  border-radius: 999px;
+}
+
+li > a {
+  padding: 0.5rem 1rem;
+  width: 100%;
+  color: #1a8cd8;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+li:hover {
+  background-color: #1a8cd8;
+  cursor: pointer;
+}
+
+li:hover > a {
+  color: #f5f8fa;
+}
+
+.tweet-volume {
+  font-size: 0.75rem;
+  background-color: #1a8cd8;
+  color: #f5f8fa;
+  border-radius: 999px;
+  padding: 0.125rem 0.25rem;
+  margin-left: 0.25rem;
+  font-weight: 600;
+}
+
+li:hover .tweet-volume {
+  color: #1a8cd8;
+  background-color: #f5f8fa;
+}
