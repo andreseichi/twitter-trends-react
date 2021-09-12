@@ -17,7 +17,7 @@ export const App = () => {
   // Get Global trends
   const globalTrends = () => {
     axios
-      .get('https://twitter-trends-backend-api.herokuapp.com/trends')
+      .get('/trends')
       .then((response) => {
         const { data } = response;
         const { trends } = data[0];
@@ -29,7 +29,7 @@ export const App = () => {
   // Get trends based on the woeid
   const woeidTrends = () => {
     axios
-      .get(`https://twitter-trends-backend-api.herokuapp.com/trends/${woeid}`)
+      .get(`/trends/${woeid}`)
       .then((response) => {
         const { data } = response;
         const { trends } = data[0];
