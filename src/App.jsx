@@ -74,7 +74,12 @@ export const App = () => {
             onChange={(e) => setWoeid(e.target.value)}
           >
             <option value="1">Global</option>
+            <option value="455820">Belém</option>
+            <option value="455827">São Paulo</option>
             <option value="2459115">New York</option>
+            <option value="2442047">Los Angeles</option>
+            <option value="44418">London</option>
+            <option value="1105779">Sydney</option>
           </select>
         </div>
 
