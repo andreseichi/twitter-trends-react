@@ -77,12 +77,13 @@ export const App = () => {
             className="woeid-select"
           >
             <option value="1">Global</option>
-            <option value="455820">Belém</option>
-            <option value="455827">São Paulo</option>
-            <option value="2459115">New York</option>
-            <option value="2442047">Los Angeles</option>
-            <option value="44418">London</option>
-            <option value="1105779">Sydney</option>
+            <option value="455820">Belém, BR</option>
+            <option value="23424768">Brazil</option>
+            <option value="23424856">Japan</option>
+            <option value="2459115">New York, US</option>
+            <option value="2442047">Los Angeles, US</option>
+            <option value="44418">London, EN</option>
+            <option value="1105779">Sydney, AU</option>
           </select>
         </div>
 
